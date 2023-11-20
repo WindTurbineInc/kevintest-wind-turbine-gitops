@@ -1,0 +1,15 @@
+app:
+  name: kevintest-wind-turbine-app
+  namespace: kevintest
+  cluster: .apps.wearedevs.rl97.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/WindTurbineInc/kevintest-wind-turbine
+  org: WindTurbineInc
+  name: kevintest-wind-turbine
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: kevintest/wind-turbine-app
+  tag: latest
